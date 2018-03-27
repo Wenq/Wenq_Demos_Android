@@ -1,0 +1,25 @@
+package com.wenq.demos;
+
+import com.wenq.lrucachedemo.R;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+//»ı“˝”√ª∫¥Ê
+public class WeakReferenceDemoActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_weak_rerference_demo);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.weak_rerference_demo, menu);
+		return true;
+	}
+
+}

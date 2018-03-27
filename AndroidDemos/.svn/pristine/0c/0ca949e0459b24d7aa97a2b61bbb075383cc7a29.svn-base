@@ -1,0 +1,23 @@
+package com.wenq.lrucachedemo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+//Í¼Æ¬»º´æ
+public class LruCacheActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_lru_cache);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.lru_cache, menu);
+		return true;
+	}
+
+}

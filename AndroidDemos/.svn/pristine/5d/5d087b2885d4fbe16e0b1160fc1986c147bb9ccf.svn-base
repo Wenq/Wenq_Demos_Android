@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/testtif"
+    android:orientation="vertical" >
+
+    <SlidingDrawer
+        android:id="@+id/slidingdrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="100"
+            android:background="@drawable/btn_focused"
+            android:text="识别结果" />
+
+        <LinearLayout
+            android:id="@id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff" >
+
+            <!-- 被隐藏内容 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dip" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="序号：" />
+
+                <EditText
+                    android:id="@+id/textViewC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtDiscountTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewC"
+                    android:text="优惠时间(h)：" />
+
+                <EditText
+                    android:id="@+id/txtDiscountTimeC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDiscountTime"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtreceiptnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtDiscountTimeC"
+                    android:text="票据编号：" />
+
+                <EditText
+                    android:id="@+id/txtreceiptnumC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceiptnum"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtreceiptdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceiptnumC"
+                    android:text="消费日期：" />
+
+                <EditText
+                    android:id="@+id/txtreceiptdateC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceiptdate"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtshopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceiptdateC"
+                    android:text="商店名称：" />
+
+                <EditText
+                    android:id="@+id/txtshopnameC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtshopname"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtreceipttotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtshopnameC"
+                    android:text="消费总额(￥)：" />
+
+                <EditText
+                    android:id="@+id/txtreceipttotalC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceipttotal"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtisreprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceipttotalC"
+                    android:text="是否重印：" />
+
+                <EditText
+                    android:id="@+id/txtisreprintC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtisreprint"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+
+                <TextView
+                    android:id="@+id/txtreceiptaddr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtisreprintC"
+                    android:text="消费地址：" />
+
+                <EditText
+                    android:id="@+id/txtreceiptaddrC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtreceiptaddr"
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:text="null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>

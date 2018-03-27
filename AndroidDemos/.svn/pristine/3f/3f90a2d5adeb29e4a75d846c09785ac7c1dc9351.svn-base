@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DialogDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="dlg_priority_not_important">不重要</string>
+    <string name="dlg_priority_general">一般</string>
+    <string name="dlg_priority_important">重要</string>
+    <string name="dlg_priority_very_important">非常重要</string>
+
+</resources>

@@ -1,0 +1,15 @@
+package com.wenq.lrucachedemo;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+
+//»Ì“˝”√ª∫¥Ê
+public class SoftReferenceActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_soft_reference);
+	}
+}
